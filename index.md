@@ -1,30 +1,45 @@
 ---
 layout: default
 title: Home
+permalink: /
 ---
 
-# EECS 351 Final Project: Remote Photoplethysmography (rPPG)
-
-## Project Overview
-This project focuses on **remote photoplethysmography (rPPG)** — estimating heart rate (HR) from ordinary facial videos without any contact sensors.
-
-### Team Members
-- Yi Du (yidu@umich.edu)
-- Lingxiao Yang
-- Yijie Liao (lyjie@umich.edu)
-
-### Quick Links
-- [Data Description](data.md)
-- [Progress Report](progress.md)
-- [Results](results.md)
-
-## Problem Statement
-By analyzing subtle color changes in facial skin caused by blood-volume variations, we aim to recover a clean 1-D physiological waveform and compute accurate heart-rate estimates.
-
-## Our Approach
-- Classical signal-processing pipeline for rPPG extraction
-- Machine-learning baseline comparison
-- Comprehensive visualizations and performance analysis
+# Remote Photoplethysmography (rPPG)
+## Contactless Heart Rate Estimation from Facial Videos
 
 ---
-*Last updated: November 2025*
+
+## 👥 Team Members
+
+- **Yi Du** - yidu@umich.edu
+- **Lingxiao Yang** - lxyang@umich.edu
+- **Yijie Liao** - lyjie@umich.edu
+
+**Course**: EECS 351 - Digital Signal Processing  
+**Institution**: University of Michigan  
+**Semester**: Fall 2025
+
+---
+
+## 🎯 Project Overview
+
+This project explores **remote photoplethysmography (rPPG)** technology, which enables **contactless heart rate measurement** from ordinary facial videos captured by standard cameras.
+
+### The Challenge
+
+Traditional heart rate monitoring requires physical contact through sensors or wearables. Our goal is to develop a **non-invasive alternative** that analyzes subtle color changes in facial skin caused by blood circulation.
+
+### Our Approach
+
+We combine **classical digital signal processing** techniques with **machine learning methods** to:
+
+1. Extract physiological signals from facial videos
+2. Process and filter the signals to isolate heart rate information
+3. Estimate accurate heart rate measurements
+4. Compare different algorithmic approaches
+
+---
+
+## 🔬 Technical Methodology
+
+### Signal Processing Pipeline
