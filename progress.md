@@ -23,7 +23,7 @@ permalink: /progress
 
 - Dug into Welch power spectral density estimation from `scipy.signal.welch` and tuned segment lengths/overlap so the HR peak becomes cleaner than with a single FFT. This matters because rPPG traces are noisy and transient; averaging multiple windowed spectra suppresses artifacts from face_detection jitter and yields a more stable BPM estimate for the website demo.
 
-**Example**: [Provide a concrete example if applicable]
+
 
 
 
