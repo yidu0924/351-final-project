@@ -3,7 +3,7 @@ layout: default
 title: Data
 permalink: /data
 ---
----
+
 # Data Description
 
 ## Datasets Used
@@ -27,4 +27,3 @@ permalink: /data
 4. **Preprocessing**: Normalize and preprocess for rPPG estimation
 
 ---
-
