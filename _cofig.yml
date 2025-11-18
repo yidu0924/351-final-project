@@ -1,8 +1,8 @@
 # 网站基本信息
 title: "EECS 351 Final Project"
 description: "Remote Photoplethysmography - Heart Rate Estimation from Facial Videos"
-baseurl: "/351-final-project"  # 你的仓库名
-url: "https://yidu0924.github.io"  # 你的GitHub用户名
+baseurl: "/351-final-project"
+url: "https://yidu0924.github.io"
 
 # 作者信息
 author:
@@ -11,7 +11,8 @@ author:
 
 # 构建设置
 markdown: kramdown
-theme: minima
+# 注释掉 theme，因为你用自定义 layout
+# theme: minima
 
 # 包含的文件
 include:
@@ -22,8 +23,9 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - vendor
 
-# 插件
+# 插件（可选）
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
