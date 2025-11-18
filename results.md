@@ -1,3 +1,9 @@
+---
+layout: default
+title: Results
+permalink: /results
+---
+
 # Experimental Results: CHROM vs Green-channel Performance Comparison
 
 ## Configuration Sweep Results
