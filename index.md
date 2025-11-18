@@ -51,20 +51,6 @@ We use two public rPPG datasets with synchronized videos + physiological signals
 
 ---
 
-## Preprocessing
-
-For ML and DSP pipelines:
-
-1. Face detection  
-2. Crop a stable ROI  
-3. Normalize color signals per frame  
-4. Feed raw frames or mean RGB traces into models  
-
-Training and evaluation follow identical preprocessing to ensure fairness across methods.
-
----
----
-
 <div class="note">
 <strong> Note:</strong> This project is part of the EECS 351 coursework at the University of Michigan. All work is original and conducted in accordance with academic integrity policies.
 </div>
