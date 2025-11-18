@@ -11,8 +11,5 @@ main:
   - title: "Results"
     url: /results/
     
-  - title: "Future Plan"
-    url: /future/
-    
   - title: "References"
     url: /reference/
