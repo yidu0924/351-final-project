@@ -6,8 +6,6 @@ permalink: /data
 
 # Data Description
 
-[← Back to Home](index.md)
-
 ## Datasets Used
 
 ### UBFC-rPPG Dataset
@@ -28,8 +26,5 @@ permalink: /data
 3. **Signal Extraction**: Extract mean RGB signals frame by frame
 4. **Preprocessing**: Normalize and preprocess for rPPG estimation
 
-## Sample Data
-[Add images/plots of your raw data here]
-
 ---
-[← Back to Home](index.md)
+
