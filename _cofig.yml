@@ -1,7 +1,7 @@
 # 网站基本信息
 title: "EECS 351 Final Project"
 description: "Remote Photoplethysmography - Heart Rate Estimation from Facial Videos"
-baseurl: "/eecs-351-project"  # 你的仓库名
+baseurl: "/351-final-project"  # 你的仓库名
 url: "https://yidu0924.github.io"  # 你的GitHub用户名
 
 # 作者信息
