@@ -31,7 +31,7 @@ pipeline using advanced signal processing and machine learning (ML) techniques t
 HR and reconstruct the underlying PPG waveform from facial videos under realistic conditions.
 
 ## Code Repo
-https://github.com/Lingxiao-Yang/EECS351-rPPG
+[https://github.com/Lingxiao-Yang/EECS351-rPPG](https://github.com/Lingxiao-Yang/EECS351-rPPG)
 
 
 ## Datasets
