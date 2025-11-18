@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Data Description
+title: Data
+permalink: /data
 ---
 
 # Data Description
