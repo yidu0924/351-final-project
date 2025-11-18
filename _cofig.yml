@@ -1,3 +1,29 @@
-title: EECS 351 rPPG Project
-description: Remote Heart Rate Estimation from Facial Videos
+# 网站基本信息
+title: "EECS 351 Final Project"
+description: "Remote Photoplethysmography - Heart Rate Estimation from Facial Videos"
+baseurl: "/eecs-351-project"  # 你的仓库名
+url: "https://yidu0924.github.io"  # 你的GitHub用户名
+
+# 作者信息
+author:
+  name: "Yi Du, Lingxiao Yang, Yijie Liao"
+  email: "yidu@umich.edu"
+
+# 构建设置
+markdown: kramdown
 theme: minima
+
+# 包含的文件
+include:
+  - _pages
+
+# 排除的文件
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
