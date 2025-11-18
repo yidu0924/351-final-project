@@ -30,6 +30,9 @@ variations, and low signal-to-noise ratio (SNR). This project aims to develop a 
 pipeline using advanced signal processing and machine learning (ML) techniques to accurately estimate
 HR and reconstruct the underlying PPG waveform from facial videos under realistic conditions.
 
+## Code Repo
+https://github.com/Lingxiao-Yang/EECS351-rPPG
+
 
 ## Datasets
 
