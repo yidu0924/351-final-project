@@ -3,13 +3,13 @@ main:
     url: /
     
   - title: "Data"
-    url: /data/
+    url: /data
     
   - title: "Progress Report"
-    url: /progress/
+    url: /progress
     
   - title: "Results"
-    url: /results/
+    url: /results
     
   - title: "References"
-    url: /reference/
+    url: /reference
