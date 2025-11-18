@@ -1,3 +1,9 @@
+---
+layout: default
+title: Progress Report
+permalink: /progress
+---
+
 # rPPG Project Progress – 17 Nov 2025
 
 ## Current Update
