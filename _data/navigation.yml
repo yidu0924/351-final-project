@@ -1,0 +1,18 @@
+main:
+  - title: "Home"
+    url: /
+    
+  - title: "Data"
+    url: /data/
+    
+  - title: "Progress Report"
+    url: /progress/
+    
+  - title: "Results"
+    url: /results/
+    
+  - title: "Future Plan"
+    url: /future/
+    
+  - title: "References"
+    url: /reference/
