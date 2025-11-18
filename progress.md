@@ -1,65 +1,23 @@
----
-layout: default
-title: Progress Report
----
+# rPPG Project Progress – 17 Nov 2025
 
-# Progress Report
+## Current Update
 
-[← Back to Home](index.md)
+- Built the three-stage pipeline described in the proposal: `extraction.py` (MediaPipe Face Mesh ROI tracking + CHROM/green traces), `filter.py` (band-pass + Savitzky-Golay/wavelet options), and `hr_calc.py` (FFT/Welch/STFT estimators) all orchestrated through `main.py`/`config.json`.
+- Verified the end-to-end flow on UBFC trial `5-gt`, generating plots and `output/metrics.csv` entries that log estimated vs. ground-truth BPM, MAE, and correlation.
+- Documented repo layout, configuration schema, and run instructions in `README.md` so future visitors can reproduce the demo run quickly.
+- **Challenges:** face_detection drift when subjects move off-axis, occasional MediaPipe tracking dropouts when subjects move too much, and a real learning curve for mediapipe graph tuning; We're mitigating all three by tightening ROI smoothing, adding motion-triggered re-detection/fallback ROIs, experimenting with frame decimation, and logging more diagnostics (PSD snapshots per block) to catch failures early.
 
-## 1. Overview
-[Write a brief overview of your current progress]
+## Task Plan (Next 3 Weeks → Due 10 Dec)
 
-## 2. Three Key Plots
+1. **Week of 25 Nov:** Automate dataset sweeps (multiple UBFC trials) and append batch metrics to characterize variance across subjects.
+2. **Week of 2 Dec:** Baselines for Machine Learning approaches (e.g., DeepPhys) using existing implementations; compare accuracy and runtime vs. our CHROM+Welch pipeline.
+3. **Week of 10 Dec:** Polish deliverables—final figures for the website, comparative table (CHROM vs. green, Welch vs. FFT), and a short video demo embedded in the site.
 
-### Plot 1: [Title]
-![Plot 1](images/plot1.png)
-**Description**: [Describe what this plot shows and how you generated it]
+## Key Learning
 
-### Plot 2: [Title]
-![Plot 2](images/plot2.png)
-**Description**: [Describe what this plot shows and how you generated it]
-
-### Plot 3: [Title]
-![Plot 3](images/plot3.png)
-**Description**: [Describe what this plot shows and how you generated it]
-
-## 3. What We Have Done So Far
-- Task 1: [Description]
-- Task 2: [Description]
-- Task 3: [Description]
-
-## 4. Challenges and Solutions
-
-### Challenge 1: [Challenge name]
-**Problem**: [Describe the problem]
-**Solution**: [How you plan to overcome it]
-
-### Challenge 2: [Challenge name]
-**Problem**: [Describe the problem]
-**Solution**: [How you plan to overcome it]
-
-## 5. Plan for Next 3 Weeks (Until Dec 10)
-
-### Week 1 (Nov 18-24)
-- [ ] Task 1
-- [ ] Task 2
-
-### Week 2 (Nov 25-Dec 1)
-- [ ] Task 3
-- [ ] Task 4
-
-### Week 3 (Dec 2-10)
-- [ ] Task 5
-- [ ] Final testing and documentation
-
-## 6. What We Have Learned
-
-**Key Learning**: [One specific thing you learned]
-
-**Why it's relevant**: [Explain how this relates to your project]
+- Dug into Welch power spectral density estimation from `scipy.signal.welch` and tuned segment lengths/overlap so the HR peak becomes cleaner than with a single FFT. This matters because rPPG traces are noisy and transient; averaging multiple windowed spectra suppresses artifacts from face_detection jitter and yields a more stable BPM estimate for the website demo.
 
 **Example**: [Provide a concrete example if applicable]
 
----
-[← Back to Home](index.md)
+
+
