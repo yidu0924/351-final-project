@@ -12,10 +12,10 @@ permalink: /results
 *Figure 1:green_bandpass_fft
 
 ![Result Configuration 1](images/5-gt(1).png)
-*Figure 1:chrom_savgol_welch
+*Figure 2:chrom_savgol_welch
 
 ![Result Configuration 1](images/5-gt(3).png)
-*Figure 1:chrom_bandpass_fft
+*Figure 3:chrom_bandpass_fft
 
 
 
